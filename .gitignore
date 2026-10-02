@@ -1,0 +1,20 @@
+# The Groq key lives in a Langflow global variable, never in this repo.
+.env
+*.env
+credentials*
+
+# Python
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Langflow runtime logs
+*.log
+
+# Except the sample CI logs, which are the fixtures this agent reads.
+!sample_logs/*.log
+
+.DS_Store
+Thumbs.db
